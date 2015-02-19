@@ -50,7 +50,6 @@ Nest template can be customized by adding parameters to your `pelicanconf.py` fi
 
 ### Pelican.conf example
 
-	:::python
 	# NEST Template
 	THEME = 'nest'
 	SITESUBTITLE = u'My Awesome Blog'
