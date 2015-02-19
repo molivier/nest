@@ -50,6 +50,7 @@ Nest template can be customized by adding parameters to your `pelicanconf.py` fi
 
 ### Pelican.conf example
 
+	```python
 	# NEST Template
 	THEME = 'nest'
 	SITESUBTITLE = u'My Awesome Blog'
@@ -130,6 +131,7 @@ Nest template can be customized by adding parameters to your `pelicanconf.py` fi
     	'extra/favicon.ico': {'path': 'favicon.ico'},
     	'extra/logo.svg': {'path': 'logo.svg'}
 	}
+	```
 
 
 ## Third-party assets
