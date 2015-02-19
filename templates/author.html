@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block title %}{{ NEST_AUTHOR_HEAD_TITLE }} {{ author }} - {{ super() }}{% endblock title %}
+{% block description %}{{ NEST_AUTHOR_HEAD_DESCRIPTION }} {{ author }}{% endblock description %}
+
+{% block headerstyle %}
+    {% if NEST_HEADER_IMAGES %}
+    <div class="header-container" style="background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('{{ SITEURL }}/images/{{ NEST_HEADER_IMAGES }}'); background-position: center; ">
+    {% else %}
+    <div class="header-container gradient">
+    {% endif %}
+{% endblock headerstyle %}
+
+{% block header %}
+    <div class="container header-wrapper">
+        <div class="row">
+              <div class="col-lg-12">
+                  <div class="header-content">
+                      <h1 class="header-title text-uppercase">{{ author }}</h1>
+                      <div class="header-underline"></div>
+                      <p class="header-subtitle header-subtitle-homepage">{{ NEST_AUTHOR_HEADER_SUBTITLE }}</p>
+                  </div>
+              </div>
+        </div>
+    </div>
+{% endblock header %}
+
+{% block content %}
+    <div class="archive-container">
+        <div class="container content archive">
+            <h2><a href="{{ SITEURL }}/{{ author.url }}">{{ NEST_AUTHOR_CONTENT_TITLE }}</a></h2>
+            <dl class="dl-horizontal">
+            	{% for article in articles %}
+            	<dt>{{ article.locale_date}}</dt>
+            	<dd><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></dd>
+            	{% endfor %}
+            </dl>
+        </div>
+    </div>
+{% endblock content %}
