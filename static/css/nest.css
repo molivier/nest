@@ -84,6 +84,21 @@ pre, code {
 
 code { padding: 3px 6px; }
 
+.linenos pre{
+	border:none;
+	margin-top:20px;
+	margin-bottom:20px;
+	padding-top:20px;
+	padding-bottom:20px;
+	padding-left:20px;
+	padding-right:0px;
+	background:#333;
+	font-size:14px;
+	font-weight:400;
+	font-family:Consolas,monaco,monospace;
+	color:#fff
+}
+
 .highlight pre {
   border:none;
   margin-top: 20px;
