@@ -417,3 +417,60 @@ blockquote{
 .footer a{
     color: #fff;
 }
+
+/* Restrecturedtext admonition */
+.note, .warning, .attention, .caution, .danger, .error, .hint, .important,
+.tip {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #eee;
+    border-left-width: 5px;
+    border-radius: 3px;
+}
+
+.note .last,
+.warning .last,
+.attention .last,
+.caution .last,
+.danger .last,
+.error .last,
+.hint .last,
+.important .last {
+    margin-bottom: 0;
+}
+
+.admonition-title {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.note, .hint, .tip {
+    border-left-color: #777;
+}
+
+.note .admonition-title,
+.hint .admonition-title,
+.tip .admonition-title {
+    color: #777;
+}
+
+.warning, .caution, .important, .attention {
+    border-left-color: #f0ad4e;
+}
+
+.warning .admonition-title,
+.caution .admonition-title,
+.important .admonition-title,
+.attention .admonition-title{
+    color: #f0ad4e;
+}
+
+.error, .danger {
+    border-left-color: #d9534f;
+}
+
+.error .admonition-title,
+.danger .admonition-title {
+    color: #d9534f;
+}
