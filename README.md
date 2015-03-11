@@ -69,7 +69,7 @@ NEST_SOCIAL_COLUMN_TITLE = u'Social'
 NEST_LINKS_COLUMN_TITLE = u'Links'
 NEST_COPYRIGHT = u'&copy; blogname 2015'
 # index.html
-NEST_INDEX_HEAD_TITLE = Homepage'
+NEST_INDEX_HEAD_TITLE = u'Homepage'
 NEST_INDEX_HEADER_TITLE = u'My Awesome Blog'
 NEST_INDEX_HEADER_SUBTITLE = u'Smashing The Stack For Fun And Profit'
 NEST_INDEX_CONTENT_TITLE = u'Last Posts'
