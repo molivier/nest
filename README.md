@@ -69,6 +69,8 @@ NEST_SITEMAP_RSS_LINK = u'RSS Feed'
 NEST_SOCIAL_COLUMN_TITLE = u'Social'
 NEST_LINKS_COLUMN_TITLE = u'Links'
 NEST_COPYRIGHT = u'&copy; blogname 2015'
+# Footer optional
+NEST_FOOTER_HTML = ''
 # index.html
 NEST_INDEX_HEAD_TITLE = u'Homepage'
 NEST_INDEX_HEADER_TITLE = u'My Awesome Blog'
