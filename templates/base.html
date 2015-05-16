@@ -86,7 +86,11 @@
                     </div>
                     <div class="nav pull-right">
                         {% for title, link in MENUITEMS %}
-                            <a href="{{ SITEURL }}{{ link }}">{{ title }}</a>
+                            {% if 'http://' in link or 'https://' in link %}
+                                <a href="{{ link }}">{{ title }}</a>
+                            {% else %}
+                                <a href="{{ SITEURL }}{{ link }}">{{ title }}</a>
+                            {% endif %}
                         {% endfor %}
                         {% if DISPLAY_PAGES_ON_MENU %}
                         {% for pg in PAGES %}
