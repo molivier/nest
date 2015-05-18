@@ -20,11 +20,11 @@ Add a background image by configuring `NEST_HEADER_IMAGES` parameter in your pel
 
 ![Nest Index View](article.png)
 
-### Article with background
+### Article or page with background
 
 ![Nest Article View](article-background.png)
 
-Add a background image by adding `Illustration` custom parameter in your markdown article. Image should be located in `content/images` directory.
+Add a background image by adding `Illustration` custom parameter in your markdown article or page. Image should be located in `content/images` directory.
 
 	Title: Ubuntu Install
 	Date: 2015-02-18 16:00
