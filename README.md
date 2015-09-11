@@ -42,6 +42,7 @@ Add a background image by adding `Illustration` custom parameter in your markdow
 * **Pygments** syntax highlighting
 * **Disqus** support for comments
 * **Google Analytics** support
+* **Piwik** support
 * RSS and Atom feeds
 
 ## Settings
