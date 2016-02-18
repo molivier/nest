@@ -7,6 +7,8 @@
 {% block headerstyle %}
     {% if article.illustration %}
     <div class="header-container" style="background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('{{ SITEURL }}/images/{{ article.illustration }}'); background-position: center; background-size: cover;">
+    {% elif NEST_HEADER_IMAGES %}
+    <div class="header-container" style="background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('{{ SITEURL }}/images/{{ NEST_HEADER_IMAGES }}'); background-position: center; background-size: cover;">
     {% else %}
     <div class="header-container gradient">
     {% endif %}
