@@ -49,6 +49,10 @@ Add a background image by adding `Illustration` custom parameter in your markdow
 
 Nest template can be customized by adding parameters to your `pelicanconf.py` file. Template specifics parameters are prefixed with template name.
 
+The header-nav have a fixed heigth of 100px. This is the max size for the logo without css modification.
+
+The min-height for the background header is 360px. The image is displayed using background-size: cover; which scale the background image to be as large as possible so that the background area is completely covered by the background image. If smaller than screen, the image is repeated to fit the background area.
+
 ### Pelican.conf example
 
 ```python
