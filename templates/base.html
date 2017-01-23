@@ -119,7 +119,7 @@
                             {% endif %}
                         {% endfor %}
                         {% if DISPLAY_PAGES_ON_MENU %}
-                        {% for pg in PAGES %}
+                        {% for pg in pages %}
                             <a {% if pg == page %} class="active"{% endif %} href="{{ SITEURL }}/{{ pg.url }}">{{ pg.title }}</a>
                         {% endfor %}
                         {% endif %}
