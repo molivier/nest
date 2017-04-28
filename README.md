@@ -141,6 +141,15 @@ EXTRA_PATH_METADATA = {
 }
 ```
 
+### Disqus activation
+
+`SITEURL` and `DISQUS_SITENAME` must be set in `publishconf.py` and/or `pelicanconfig.py` to activate the Disqus comment system:
+
+```python
+SITEURL = 'https://www.molivier.com'
+DISQUS_SITENAME = 'molivier'
+```
+
 
 ## Third-party assets
 
