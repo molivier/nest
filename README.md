@@ -61,6 +61,8 @@ THEME = 'nest'
 SITESUBTITLE = u'My Awesome Blog'
 # Minified CSS
 NEST_CSS_MINIFY = True
+# Add canonical link element to top page header and all article/author/category/tag page header
+NEST_REL_CANONICAL_LINK = True
 # Add items to top menu before pages
 MENUITEMS = [('Homepage', '/'),('Categories','/categories.html')]
 # Add header background image from content/images : 'background.jpg'
