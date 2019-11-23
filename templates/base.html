@@ -8,6 +8,21 @@
         <meta name="description" content="{% block description %}{% endblock description %}">
         <meta name="keywords" content="{% block keywords %}{% endblock keywords %}">
         <link rel="icon" href="{{ SITEURL }}/favicon.ico">
+        {% if NEST_REL_CANONICAL_LINK %}
+        <!-- Canonical -->
+        {% if article %}
+        <link rel="canonical" href="{{ SITEURL }}/{{ article.url }}">
+        {% elif author %}
+        <link rel="canonical" href="{{ SITEURL }}/{{ author.url }}">
+        {% elif category %}
+        <link rel="canonical" href="{{ SITEURL }}/{{ category.url }}">
+        {% elif tag %}
+        <link rel="canonical" href="{{ SITEURL }}/{{ tag.url }}">
+        {% else %}
+        <link rel="canonical" href="{{ SITEURL }}">
+        {% endif %}
+        <!-- /Canonical -->
+        {% endif %}
 
         <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
 
